@@ -1,0 +1,59 @@
+camera = {
+  position = { x = "0"; y = "0"; z = "0"; };
+  direction = { x = "1"; y = "1"; z = "1"; };
+  fov = "50";
+  rotation = { x = "0"; y = "0"; z = "0"; };
+  resolution = { x = "1920"; y = "1080"; };
+}
+
+lights = {
+  ambiantIntensity = "0.2";
+  diffuseIntensity = "0.8";
+
+  direction = { x = "-2"; y = "-5"; z = "-3"; };
+}
+
+primitives = (
+  {
+    type = "sphere";
+    center = { x = "1"; y = "0"; z = "-2"; };
+    radius = "1";
+    material = { name = "matte"; r = "1"; g = "0.6"; b = "0.2"; };
+  },
+  {
+    type = "sphere";
+    center = { x = "0"; y = "0"; z = "-3"; };
+    radius = "1";
+    material = { name = "matte"; r = "1"; g = "0"; b = "0"; };
+  },
+  {
+    type = "sphere";
+    center = { x = "-1"; y = "0"; z = "-3"; };
+    radius = "1";
+    material = { name = "matte"; r = "1"; g = "0"; b = "1"; };
+  },
+  {
+    type = "sphere";
+    center = { x = "-5"; y = "0"; z = "-5"; };
+    radius = "2";
+    material = { name = "matte"; r = "1"; g = "1"; b = "1"; };
+  },
+  {
+    type = "sphere";
+    center = { x = "0"; y = "-1"; z = "-2"; };
+    radius = "1";
+    material = { name = "matte"; r = "0"; g = "1"; b = "0"; };
+  },
+  {
+    type = "sphere";
+    center = { x = "5"; y = "1"; z = "-5"; };
+    radius = "2";
+    material = { name = "matte"; r = "0"; g = "1"; b = "0"; };
+  },
+  {
+    type = "plane";
+    axe = "Y";
+    position = "-2";
+    material = { name = "matte"; r = "1"; g = ".6"; b = "0"; };
+  },
+)
